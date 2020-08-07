@@ -16,21 +16,21 @@ use Hyperf\Command\Annotation\Command;
 /**
  * @Command
  */
-class MiddlewareCommand extends GeneratorCommand
+class ConstantCommand extends GeneratorCommand
 {
     public function __construct()
     {
-        parent::__construct('gen:middleware');
-        $this->setDescription('Create a new middleware class');
+        parent::__construct('gen:constant');
+        $this->setDescription('Create a new constant class');
     }
 
     protected function getStub(): string
     {
-        return $this->getConfig()['stub'] ?? __DIR__ . '/stubs/middleware.stub';
+        return $this->getConfig()['stub'] ?? __DIR__ . '/stubs/constant.stub';
     }
 
     protected function getDefaultNamespace(): string
     {
-        return $this->getConfig()['namespace'] ?? 'App\\Middleware';
+        return $this->getConfig()['namespace'] ?? 'App\\Constants';
     }
 }
