@@ -2,7 +2,7 @@
 
 namespace %NAMESPACE%;
 
-use Hyperf\ResourceGrpc\GrpcResource;
+use Hyperf\TransformerGrpc\GrpcResource;
 
 class %CLASS% extends GrpcResource
 {

@@ -2,12 +2,12 @@
 
 namespace %NAMESPACE%;
 
-use Hyperf\Resource\Json\JsonResource;
+use Hyperf\Transformer\Json\ResourceCollection;
 
-class %CLASS% extends JsonResource
+class %CLASS% extends ResourceCollection
 {
     /**
-     * Transform the resource into an array.
+     * Transform the resource collection into an array.
      *
      * @return array
      */
